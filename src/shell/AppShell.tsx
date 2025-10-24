@@ -40,7 +40,7 @@ export default function AppShell({ children }: { children: React.ReactNode }) {
               component={RouterLink}
               to="/"
               sx={{
-                color: '#1a1a1a',
+                color: 'white',
                 textTransform: 'none',
                 fontSize: '1rem',
                 fontWeight: 500,
@@ -52,7 +52,7 @@ export default function AppShell({ children }: { children: React.ReactNode }) {
                   left: 0,
                   width: 0,
                   height: 2,
-                  background: 'linear-gradient(90deg, #FF006E, #3A86FF)',
+                  background: 'white',
                   transition: 'width 0.3s ease',
                 },
                 '&:hover::after': {
@@ -66,7 +66,7 @@ export default function AppShell({ children }: { children: React.ReactNode }) {
               component={RouterLink}
               to="/events"
               sx={{
-                color: '#1a1a1a',
+                color: 'white',
                 textTransform: 'none',
                 fontSize: '1rem',
                 fontWeight: 500,
@@ -78,7 +78,7 @@ export default function AppShell({ children }: { children: React.ReactNode }) {
                   left: 0,
                   width: 0,
                   height: 2,
-                  background: 'linear-gradient(90deg, #FF006E, #3A86FF)',
+                  background: 'white',
                   transition: 'width 0.3s ease',
                 },
                 '&:hover::after': {
@@ -92,7 +92,7 @@ export default function AppShell({ children }: { children: React.ReactNode }) {
               component={RouterLink}
               to="/workshops"
               sx={{
-                color: '#1a1a1a',
+                color: 'white',
                 textTransform: 'none',
                 fontSize: '1rem',
                 fontWeight: 500,
@@ -104,7 +104,7 @@ export default function AppShell({ children }: { children: React.ReactNode }) {
                   left: 0,
                   width: 0,
                   height: 2,
-                  background: 'linear-gradient(90deg, #FF006E, #3A86FF)',
+                  background: 'white',
                   transition: 'width 0.3s ease',
                 },
                 '&:hover::after': {
@@ -118,7 +118,7 @@ export default function AppShell({ children }: { children: React.ReactNode }) {
               component={RouterLink}
               to="/pricing"
               sx={{
-                color: '#1a1a1a',
+                color: 'white',
                 textTransform: 'none',
                 fontSize: '1rem',
                 fontWeight: 500,
@@ -130,7 +130,7 @@ export default function AppShell({ children }: { children: React.ReactNode }) {
                   left: 0,
                   width: 0,
                   height: 2,
-                  background: 'linear-gradient(90deg, #FF006E, #3A86FF)',
+                  background: 'white',
                   transition: 'width 0.3s ease',
                 },
                 '&:hover::after': {
