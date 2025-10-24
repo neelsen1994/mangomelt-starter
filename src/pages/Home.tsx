@@ -50,8 +50,6 @@ export default function Home() {
             '50%': { backgroundPosition: '100% 50%' },
             '100%': { backgroundPosition: '0% 50%' },
           },
-          transform: `translateY(${scrollY * 0.5}px)`,
-          transition: 'transform 0.1s ease-out',
         }}
       >
         {/* Fluid shapes background */}
