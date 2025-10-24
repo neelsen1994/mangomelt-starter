@@ -6,10 +6,10 @@ export default function Home() {
   const [scrollY, setScrollY] = useState(0)
 
   const carouselImages = [
-    '/resource/myart.jpg',
-    '/resource/myart2.jpg',
-    '/resource/myart3.jpg',
-    '/resource/myart4.jpg',
+    './resource/myart.jpg',
+    './resource/myart2.jpg',
+    './resource/myart3.jpg',
+    './resource/myart4.jpg',
   ]
 
   useEffect(() => {
