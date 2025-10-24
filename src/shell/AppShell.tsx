@@ -8,7 +8,7 @@ export default function AppShell({ children }: { children: React.ReactNode }) {
         position="sticky"
         elevation={1}
         sx={{
-          background: '#FF5722',
+          background: '#ff3d00',
           borderBottom: 'none',
         }}
       >
@@ -30,7 +30,7 @@ export default function AppShell({ children }: { children: React.ReactNode }) {
               cursor: 'pointer',
               transition: 'transform 0.2s ease',
               '&:hover': {
-                transform: 'scale(1.05)',
+                transform: 'scale(1.2)',
               },
             }}
           />
