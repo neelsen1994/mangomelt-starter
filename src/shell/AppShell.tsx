@@ -8,8 +8,8 @@ export default function AppShell({ children }: { children: React.ReactNode }) {
         position="sticky"
         elevation={1}
         sx={{
-          background: 'linear-gradient(135deg, #ffffff 0%, #f8f8f8 100%)',
-          borderBottom: '1px solid #e0e0e0',
+          background: '#FF5722',
+          borderBottom: 'none',
         }}
       >
         <Toolbar
