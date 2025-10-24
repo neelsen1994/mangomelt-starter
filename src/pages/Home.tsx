@@ -7,9 +7,9 @@ export default function Home() {
 
   const carouselImages = [
     '/resource/myart.jpg',
-    'https://images.unsplash.com/photo-1561070791-2526d30994b5?w=500&h=500&fit=crop',
-    'https://images.unsplash.com/photo-1549887534-e3e7ff47855b?w=500&h=500&fit=crop',
-    'https://images.unsplash.com/photo-1549887534-f3bbb00a29f6?w=500&h=500&fit=crop',
+    '/resource/myart2.jpg',
+    '/resource/myart3.jpg',
+    '/resource/myart4.jpg',
   ]
 
   useEffect(() => {
