@@ -13,9 +13,9 @@ export default function AppShell({ children }: { children: React.ReactNode }) {
           <Button component={RouterLink} to="/pricing">Pricing</Button>
         </Toolbar>
       </AppBar>
-      <Container maxWidth="lg" sx={{ py: 4 }}>
+      <Box sx={{ width: '100%' }}>
         {children}
-      </Container>
+      </Box>
     </Box>
   )
 }
