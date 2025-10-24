@@ -115,14 +115,15 @@ export default function Home() {
       {/* Description Section */}
       <Box
         sx={{
-          minHeight: '50vh',
+          minHeight: '60vh',
           display: 'flex',
           flexDirection: 'column',
           alignItems: 'center',
           justifyContent: 'center',
-          padding: { xs: '40px 20px', md: '80px 40px' },
+          padding: { xs: '60px 20px', md: '100px 40px' },
           background: 'linear-gradient(180deg, #ffffff 0%, #f5f5f5 100%)',
           textAlign: 'center',
+          width: '100%',
         }}
       >
         <Typography
@@ -131,7 +132,8 @@ export default function Home() {
             fontWeight: 700,
             color: '#1a1a1a',
             marginBottom: 3,
-            fontSize: { xs: '2rem', md: '3rem' },
+            fontSize: { xs: '1.5rem', md: '2.5rem' },
+            lineHeight: 1.4,
           }}
         >
           Promoting local art and connecting artists, venues, and communities.
