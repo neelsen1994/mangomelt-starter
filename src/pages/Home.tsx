@@ -163,13 +163,14 @@ export default function Home() {
       {/* Carousel Section */}
       <Box
         sx={{
-          minHeight: '70vh',
+          minHeight: 'auto',
           display: 'flex',
           flexDirection: 'column',
           alignItems: 'center',
           justifyContent: 'center',
-          padding: { xs: '40px 20px', md: '80px 40px' },
+          padding: { xs: '60px 20px', md: '100px 40px' },
           background: 'linear-gradient(135deg, #f5f5f5 0%, #ffffff 50%, #f5f5f5 100%)',
+          width: '100%',
         }}
       >
         <Typography
@@ -178,7 +179,7 @@ export default function Home() {
             fontWeight: 700,
             color: '#1a1a1a',
             marginBottom: 5,
-            fontSize: { xs: '2rem', md: '3rem' },
+            fontSize: { xs: '1.5rem', md: '2.5rem' },
           }}
         >
           Featured Artworks
