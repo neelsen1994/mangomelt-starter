@@ -1,27 +1,38 @@
-import { Box, Typography, Button, Card, CardContent, Stack } from '@mui/material'
-import { Link as RouterLink } from 'react-router-dom'
+import { Box, Typography, Button, Stack } from '@mui/material'
 
 export default function Home() {
   return (
-    <Box>
-      <Box sx={{ py: 8, textAlign: 'center' }}>
-        <Typography variant="h3" fontWeight={800}>Local art, melted into your city</Typography>
-        <Typography sx={{ mt: 2 }} color="text.secondary">
-          Events • Workshops • Online Gallery (coming soon)
-        </Typography>
-        <Stack direction="row" spacing={2} sx={{ mt: 3, justifyContent: 'center' }}>
-          <Button variant="contained" component={RouterLink} to="/events">Explore Events</Button>
-          <Button variant="outlined" component={RouterLink} to="/workshops">Book a Workshop</Button>
-        </Stack>
-      </Box>
-      <Card>
-        <CardContent>
-          <Typography variant="h6" fontWeight={700}>Why Mango Melt?</Typography>
-          <Typography sx={{ mt: 1 }}>
-            We promote local artists, support venues and build art culture. Affordable art for everyone.
-          </Typography>
-        </CardContent>
-      </Card>
+    <Box
+      sx={{
+        minHeight: '100vh',
+        display: 'flex',
+        flexDirection: 'column',
+        alignItems: 'center',
+        justifyContent: 'center',
+        textAlign: 'center',
+        background: 'linear-gradient(180deg, #FFF8E1 0%, #FFE0B2 100%)',
+      }}
+    >
+      <Typography variant="h2" fontWeight={800} color="primary">
+        Mango Melt Art Platform
+      </Typography>
+
+      <Typography variant="h6" sx={{ mt: 2, maxWidth: 600 }}>
+        Promoting local art and connecting artists, venues, and communities.
+      </Typography>
+
+      <Typography variant="h4" sx={{ mt: 6, fontWeight: 700 }}>
+        🎨 Coming Soon!
+      </Typography>
+
+      <Stack direction="row" spacing={2} sx={{ mt: 4 }}>
+        <Button variant="contained" color="primary" href="mailto:hello@mangomelt.xyz">
+          Contact Us
+        </Button>
+        <Button variant="outlined" color="primary" href="https://www.instagram.com/mangomeltart">
+          Follow on Instagram
+        </Button>
+      </Stack>
     </Box>
   )
 }
