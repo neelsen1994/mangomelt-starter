@@ -174,9 +174,11 @@ export default function Home() {
             sx={{
               fontWeight: 900,
               color: 'white',
-              fontSize: { xs: '3rem', sm: '4rem', md: '5rem' },
+              fontSize: { xs: '3.5rem', sm: '4.5rem', md: '6rem' },
               textShadow: '0 4px 20px rgba(0, 0, 0, 0.3)',
               marginBottom: 2,
+              fontFamily: '"Playfair Display", serif',
+              letterSpacing: '-1px',
             }}
           >
             Welcome to the garden
@@ -185,8 +187,9 @@ export default function Home() {
             variant="h5"
             sx={{
               color: 'rgba(255, 255, 255, 0.9)',
-              fontSize: { xs: '1rem', md: '1.5rem' },
+              fontSize: { xs: '1.3rem', md: '1.8rem' },
               fontWeight: 300,
+              fontFamily: '"Playfair Display", serif',
             }}
           >
             A space for creative expression and artistic connection
