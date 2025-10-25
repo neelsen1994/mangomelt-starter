@@ -52,6 +52,28 @@ export default function Home() {
           },
         }}
       >
+        {/* Artistic background image with blend mode */}
+        <Box
+          sx={{
+            position: 'absolute',
+            top: 0,
+            left: 0,
+            width: '100%',
+            height: '100%',
+            backgroundImage: 'url(https://cdn.builder.io/api/v1/image/assets%2F9c4527e11c674a5cb0ce0f937d4a12e5%2Fdcc21dbaeb7b47988142aa7f4156ec86?format=webp&width=800)',
+            backgroundSize: 'cover',
+            backgroundPosition: 'center',
+            opacity: 0.25,
+            mixBlendMode: 'overlay',
+            zIndex: 0,
+            animation: 'slideIn 20s ease-in-out infinite',
+            '@keyframes slideIn': {
+              '0%, 100%': { transform: 'scale(1)' },
+              '50%': { transform: 'scale(1.05)' },
+            },
+          }}
+        />
+
         {/* Fluid shapes background */}
         <Box
           sx={{
@@ -64,6 +86,7 @@ export default function Home() {
             top: '-100px',
             left: '-100px',
             animation: 'float 6s ease-in-out infinite',
+            zIndex: 0,
             '@keyframes float': {
               '0%, 100%': { transform: 'translate(0, 0)' },
               '50%': { transform: 'translate(20px, 20px)' },
@@ -81,10 +104,71 @@ export default function Home() {
             bottom: '-150px',
             right: '-150px',
             animation: 'float 8s ease-in-out infinite reverse',
+            zIndex: 0,
           }}
         />
 
-        <Box sx={{ position: 'relative', zIndex: 1 }}>
+        {/* Artistic image accent on the right side */}
+        <Box
+          sx={{
+            position: 'absolute',
+            right: { xs: '-20%', sm: '-15%', md: '-10%', lg: '5%' },
+            bottom: { xs: '-10%', md: '0%' },
+            width: { xs: '350px', sm: '450px', md: '550px' },
+            height: { xs: '350px', sm: '450px', md: '550px' },
+            backgroundImage: 'url(https://cdn.builder.io/api/v1/image/assets%2F9c4527e11c674a5cb0ce0f937d4a12e5%2Fdcc21dbaeb7b47988142aa7f4156ec86?format=webp&width=800)',
+            backgroundSize: 'cover',
+            backgroundPosition: 'center',
+            borderRadius: '50%',
+            boxShadow: '0 20px 60px rgba(0, 0, 0, 0.3)',
+            opacity: 0.8,
+            zIndex: 1,
+            animation: 'pulse-float 4s ease-in-out infinite',
+            '@keyframes pulse-float': {
+              '0%, 100%': { transform: 'translateY(0px) scale(1)' },
+              '50%': { transform: 'translateY(-10px) scale(1.02)' },
+            },
+          }}
+        />
+
+        {/* Animated Mango Logo with Scroll Effect */}
+        {scrollY < window.innerHeight && (
+          <Box
+            sx={{
+              position: 'fixed',
+              zIndex: 1.5,
+              pointerEvents: 'none',
+              left: `calc(20px + ${(scrollY / window.innerHeight) * 40}%)`,
+              top: `calc(100vh - 250px - ${(scrollY / window.innerHeight) * 35}vh)`,
+              transform: `scale(${1 + (scrollY / window.innerHeight) * 2}) rotate(${(scrollY / window.innerHeight) * 360}deg)`,
+              opacity: Math.max(0, 1 - scrollY / window.innerHeight * 1.3),
+              transition: 'none',
+            }}
+          >
+            <Box
+              component="img"
+              src="https://cdn.builder.io/api/v1/image/assets%2F9c4527e11c674a5cb0ce0f937d4a12e5%2F4ec8c88b13824600a43f07d4847a1b61?format=webp&width=800"
+              alt="Mango Melt Mango"
+              sx={{
+                height: { xs: '180px', sm: '220px', md: '280px' },
+                width: 'auto',
+                filter: 'drop-shadow(0 10px 30px rgba(0, 0, 0, 0.3))',
+                display: 'block',
+                animation: 'heartbeat 1.2s ease-in-out infinite',
+                '@keyframes heartbeat': {
+                  '0%': { transform: 'scale(1)' },
+                  '10%': { transform: 'scale(1.1)' },
+                  '20%': { transform: 'scale(1)' },
+                  '30%': { transform: 'scale(1.15)' },
+                  '40%': { transform: 'scale(1)' },
+                  '100%': { transform: 'scale(1)' },
+                },
+              }}
+            />
+          </Box>
+        )}
+
+        <Box sx={{ position: 'relative', zIndex: 2 }}>
           <Typography
             variant="h1"
             sx={{
