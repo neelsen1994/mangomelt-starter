@@ -139,7 +139,7 @@ export default function Home() {
               zIndex: 1.5,
               pointerEvents: 'none',
               left: `calc(20px + ${(scrollY / window.innerHeight) * 40}%)`,
-              top: `calc(100vh - 250px - ${(scrollY / window.innerHeight) * 35}vh)`,
+              top: `calc(100vh - 350px - ${(scrollY / window.innerHeight) * 35}vh)`,
               transform: `scale(${1 + (scrollY / window.innerHeight) * 2}) rotate(${(scrollY / window.innerHeight) * 360}deg)`,
               opacity: Math.max(0, 1 - scrollY / window.innerHeight * 1.3),
               transition: 'none',
@@ -150,7 +150,7 @@ export default function Home() {
               src="https://cdn.builder.io/api/v1/image/assets%2F9c4527e11c674a5cb0ce0f937d4a12e5%2F4ec8c88b13824600a43f07d4847a1b61?format=webp&width=800"
               alt="Mango Melt Mango"
               sx={{
-                height: { xs: '180px', sm: '220px', md: '280px' },
+                height: { xs: '240px', sm: '300px', md: '380px' },
                 width: 'auto',
                 filter: 'drop-shadow(0 10px 30px rgba(0, 0, 0, 0.3))',
                 display: 'block',
@@ -174,9 +174,11 @@ export default function Home() {
             sx={{
               fontWeight: 900,
               color: 'white',
-              fontSize: { xs: '3rem', sm: '4rem', md: '5rem' },
+              fontSize: { xs: '3.5rem', sm: '4.5rem', md: '6rem' },
               textShadow: '0 4px 20px rgba(0, 0, 0, 0.3)',
               marginBottom: 2,
+              fontFamily: '"Playfair Display", serif',
+              letterSpacing: '-1px',
             }}
           >
             Welcome to the garden
@@ -185,8 +187,9 @@ export default function Home() {
             variant="h5"
             sx={{
               color: 'rgba(255, 255, 255, 0.9)',
-              fontSize: { xs: '1rem', md: '1.5rem' },
+              fontSize: { xs: '1.3rem', md: '1.8rem' },
               fontWeight: 300,
+              fontFamily: '"Playfair Display", serif',
             }}
           >
             A space for creative expression and artistic connection
