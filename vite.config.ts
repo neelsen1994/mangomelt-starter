@@ -3,6 +3,7 @@ import react from '@vitejs/plugin-react'
 
 export default defineConfig({
   plugins: [react()],
+  publicDir: 'resource',
   server: { port: 5173, host: true },
   define: {
     __APP_VERSION__: JSON.stringify('0.1.0')
