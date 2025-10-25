@@ -139,7 +139,7 @@ export default function Home() {
               zIndex: 1.5,
               pointerEvents: 'none',
               left: `calc(20px + ${(scrollY / window.innerHeight) * 40}%)`,
-              top: `calc(100vh - 150px - ${(scrollY / window.innerHeight) * 35}vh)`,
+              top: `calc(100vh - 250px - ${(scrollY / window.innerHeight) * 35}vh)`,
               transform: `scale(${1 + (scrollY / window.innerHeight) * 2}) rotate(${(scrollY / window.innerHeight) * 360}deg)`,
               opacity: Math.max(0, 1 - scrollY / window.innerHeight * 1.3),
               transition: 'none',
