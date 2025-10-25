@@ -150,7 +150,7 @@ export default function Home() {
               src="https://cdn.builder.io/api/v1/image/assets%2F9c4527e11c674a5cb0ce0f937d4a12e5%2F4ec8c88b13824600a43f07d4847a1b61?format=webp&width=800"
               alt="Mango Melt Mango"
               sx={{
-                height: { xs: '180px', sm: '220px', md: '280px' },
+                height: { xs: '240px', sm: '300px', md: '380px' },
                 width: 'auto',
                 filter: 'drop-shadow(0 10px 30px rgba(0, 0, 0, 0.3))',
                 display: 'block',
