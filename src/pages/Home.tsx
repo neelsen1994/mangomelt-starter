@@ -131,6 +131,31 @@ export default function Home() {
           }}
         />
 
+        {/* Floating Mango Melt Logo with Scroll Effect */}
+        <Box
+          sx={{
+            position: 'fixed',
+            top: '50%',
+            left: '50%',
+            transform: `translate(-50%, -50%) scale(${Math.max(0, 1 - scrollY / (window.innerHeight * 0.8))})`,
+            zIndex: scrollY < window.innerHeight ? 1.5 : -1,
+            opacity: Math.max(0, 1 - scrollY / (window.innerHeight * 0.6)),
+            transition: 'opacity 0.3s ease-out',
+            pointerEvents: 'none',
+          }}
+        >
+          <Box
+            component="img"
+            src="https://cdn.builder.io/api/v1/image/assets%2F9c4527e11c674a5cb0ce0f937d4a12e5%2F52c32e88303947eab9b39366fc8aef99?format=webp&width=800"
+            alt="Mango Melt Logo"
+            sx={{
+              height: { xs: '150px', sm: '200px', md: '250px' },
+              width: 'auto',
+              filter: 'drop-shadow(0 10px 30px rgba(0, 0, 0, 0.4))',
+            }}
+          />
+        </Box>
+
         <Box sx={{ position: 'relative', zIndex: 2 }}>
           <Typography
             variant="h1"
