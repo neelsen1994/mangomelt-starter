@@ -150,10 +150,19 @@ export default function Home() {
               src="https://cdn.builder.io/api/v1/image/assets%2F9c4527e11c674a5cb0ce0f937d4a12e5%2F4ec8c88b13824600a43f07d4847a1b61?format=webp&width=800"
               alt="Mango Melt Mango"
               sx={{
-                height: { xs: '120px', sm: '150px', md: '180px' },
+                height: { xs: '180px', sm: '220px', md: '280px' },
                 width: 'auto',
                 filter: 'drop-shadow(0 10px 30px rgba(0, 0, 0, 0.3))',
                 display: 'block',
+                animation: 'heartbeat 1.2s ease-in-out infinite',
+                '@keyframes heartbeat': {
+                  '0%': { transform: 'scale(1)' },
+                  '10%': { transform: 'scale(1.1)' },
+                  '20%': { transform: 'scale(1)' },
+                  '30%': { transform: 'scale(1.15)' },
+                  '40%': { transform: 'scale(1)' },
+                  '100%': { transform: 'scale(1)' },
+                },
               }}
             />
           </Box>
